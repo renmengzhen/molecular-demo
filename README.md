@@ -14,7 +14,7 @@ This project implements quantum algorithms for solving molecular Hamiltonians an
 │   ├── heisenberg.py    # Heisenberg model
 │   ├── spin_glass.py    # Spin glass model
 │   ├── molecular.py     # Molecular Hamiltonian and related tools
-│   ├── vqe.py           # Quantum circuits and VQE
+│   ├── vqe.py           # Quantum circuits and VQE, VITE
 │   ├── utils.py         # Utility functions
 │   └── clustering.py    # Clustering and analysis
 ├── scripts/
