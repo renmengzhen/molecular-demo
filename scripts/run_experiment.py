@@ -90,7 +90,7 @@ for d in range(1):
     # Eroop.to_excel('00no_'+'Eroop'+'_hd'+str(dist)+'.xlsx')
 
 
-#%% Hopkins检验
+#%% Hopkins
 # read
 # X_H = pd.read_excel('00no_Eroop_hd1.1.xlsx').iloc[:,-N:]
 X_H = Eroop.iloc[:,-N:]
