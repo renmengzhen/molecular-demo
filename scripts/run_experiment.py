@@ -13,7 +13,7 @@ import seaborn as sns
 import scipy as sp
 from qiskit.circuit import QuantumCircuit
 from molecular.molecular import LiH
-from molecular.vqe import makewave0, dtheta, Lv
+from molecular.vqe import makewave0, dtheta, Lv, L
 from molecular.utils import normalization, sf
 from molecular.clustering import hopkins
 from sklearn.cluster import KMeans
@@ -21,7 +21,7 @@ from sklearn.metrics import silhouette_score
 
 #%% demo for dist= 1.1, LiH molecula
 n = 12  # number of qubit
-
+roop = 100
 for d in range(1):
     # dist = np.round(0.5 + 0.3 * d, 2)
     dist = 1.1
@@ -90,7 +90,7 @@ for d in range(1):
     # Eroop.to_excel('00no_'+'Eroop'+'_hd'+str(dist)+'.xlsx')
 
 
-#%% Hopkins检验
+#%% Hopkins test
 # read
 # X_H = pd.read_excel('00no_Eroop_hd1.1.xlsx').iloc[:,-N:]
 X_H = Eroop.iloc[:,-N:]
